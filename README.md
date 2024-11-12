@@ -40,3 +40,5 @@ programs.shell-aliases = {
   };
 };
 ```
+
+or [this configuration](https://github.com/DestinyofYeet/nix-config/blob/5d9f5a57e95f4221ed9c9a14c29ac6d58627c2e6/non-server/modules/shell-aliases.nix)
