@@ -60,6 +60,7 @@ in {
             description = "The override value of ${shellName}";
             default = cfg.aliases.${name}.default;
           };}) shells);
+
         })) types.str);
 
         apply = old:
