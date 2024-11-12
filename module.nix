@@ -35,6 +35,7 @@ let
   shellAliasShells = [
     "bash"
     "zsh"
+    "fish"
   ];
 
   shells = [
