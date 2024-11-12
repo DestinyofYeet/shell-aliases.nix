@@ -26,12 +26,6 @@ let
 
   mkShells = shells: listToAttrs (map (name: { name = "enable${mkFirstCharUpper name}"; value = mkShellOption name; }) shells);
 
-  mkShellSubmoduleOption = shells: submoduleName: listToAttrs (map (name: { inherit name; value = mkOption {
-    type = types.nullOr types.str;
-    description = "The override value of ${name}";
-    default = cfg.aliases.${submoduleName}.default;
-  };}));
-
   shellAliasShells = [
     "bash"
     "zsh"
